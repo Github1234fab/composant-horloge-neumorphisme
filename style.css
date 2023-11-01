@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  .background {
+    background-image: repeating-linear-gradient(
+        148deg,
+        hsla(54, 0%, 87%, 0.12) 0px,
+        hsla(54, 0%, 87%, 0.12) 1px,
+        transparent 1px,
+        transparent 4px,
+        hsla(54, 0%, 87%, 0.12) 4px,
+        hsla(54, 0%, 87%, 0.12) 5px,
+        transparent 5px,
+        transparent 7px,
+        hsla(54, 0%, 87%, 0.12) 7px,
+        hsla(54, 0%, 87%, 0.12) 8px
+      ),
+      repeating-linear-gradient(
+        119deg,
+        hsla(54, 0%, 87%, 0.12) 0px,
+        hsla(54, 0%, 87%, 0.12) 1px,
+        transparent 1px,
+        transparent 4px,
+        hsla(54, 0%, 87%, 0.12) 4px,
+        hsla(54, 0%, 87%, 0.12) 5px,
+        transparent 5px,
+        transparent 7px,
+        hsla(54, 0%, 87%, 0.12) 7px,
+        hsla(54, 0%, 87%, 0.12) 8px
+      ),
+      repeating-linear-gradient(
+        0deg,
+        hsla(54, 0%, 87%, 0.15) 0px,
+        hsla(54, 0%, 87%, 0.15) 0px,
+        transparent 0px,
+        transparent 1px,
+        hsla(54, 0%, 87%, 0.15) 1px,
+        hsla(54, 0%, 87%, 0.15) 4px,
+        transparent 4px,
+        transparent 5px,
+        hsla(54, 0%, 87%, 0.15) 5px,
+        hsla(54, 0%, 87%, 0.15) 8px
+      ),
+      repeating-linear-gradient(
+        90deg,
+        hsla(54, 0%, 87%, 0.15) 0px,
+        hsla(54, 0%, 87%, 0.15) 0px,
+        transparent 0px,
+        transparent 1px,
+        hsla(54, 0%, 87%, 0.15) 1px,
+        hsla(54, 0%, 87%, 0.15) 4px,
+        transparent 4px,
+        transparent 5px,
+        hsla(54, 0%, 87%, 0.15) 5px,
+        hsla(54, 0%, 87%, 0.15) 8px
+      ),
+      linear-gradient(90deg, rgb(251, 251, 251), rgb(251, 251, 251));
+  }
+
+  .wrapper-clock {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    background-color: #efefef;
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px #bcbcbc, -5px -5px 12px #ffffff;
+    padding: 50px;
+  }
+
+  .style {
+    background-color: #efefef;
+    font-family: futura;
+    font-size: 3em;
+    text-align: center;
+    padding: 25px;
+    border-radius: 5px;
+    width: 150px;
+    background-color: #565656;
+    box-shadow: 2px 2px 6px #bcbcbc, -5px -5px 12px #ffffff;
+    color: transparent;
+    text-shadow: 0px 2px 4px rgba(255, 255, 255, 0.8);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    font-weight: 900;
+  }
+  .container {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+  }
+
+  .container h2 {
+    font-family: futura;
+    font-size: 4em;
+    color: transparent;
+    text-shadow: 0px 2px 4px rgba(255, 255, 255, 0.8);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    font-weight: 900;
+    background-color: #565656;
+    letter-spacing: -4px;
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .wrapper-clock {
+    flex-direction: column;
+  }
+}
